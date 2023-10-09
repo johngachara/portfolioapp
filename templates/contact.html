@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  header h1 {
+    margin: 0;
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Serif', serif;
+  color: burlywood;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  nav ul li a:hover{
+    letter-spacing: 2px;
+    color: gold;
+  }
+  section {
+    padding: 40px 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .project {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+.container p{
+ letter-spacing: 2px;
+ line-height: 25px;
+}
+.container a{
+text-decoration: none;
+color: burlywood;
+transition: 0.5s;
+}
+.container a:hover{
+  letter-spacing: 2px;
+  color: gold;
+}
+.content{
+  color: white;
+  background-color: black;
+}
+html{
+  scroll-behavior: smooth;
+}
+.contentsection{
+
+  background-color: black;
+  color: white;
+}
+.introduction{
+  max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.introduction p{
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.introduction h2{
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+    .navigation{
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    display: flex;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-link a{
+    text-decoration: none;
+    transition: 0.5s;
+    color:whitesmoke;
+    width: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-link a:hover{
+    letter-spacing: 2px;
+    color: gold;
+}
+.skewed-header{
+    height: 400px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.header-background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+*{
+    margin: 0;
+}
+.skewed-header-wrapper{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    font-size: small;
+    justify-content: center;
+}
+.skewed-header-content{
+    justify-content: space-between;
+    width: 1000px;
+    display: flex;
+}
+.skewed-heading{
+    background-color: goldenrod;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page-content{
+    width: 1000px;
+}
+.page-content img{
+    float: left;
+    width: 350px;
+    margin: 8px 20px 50px 0px;
+}
+p{
+    letter-spacing: 1px;
+    line-height: 30px;
+    display: flex;
+    color: #cea135;
+    font-size: large;
+    align-items: center;
+}
+.squares-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.squares{
+    width: 1000px;
+}
+.square-content{
+    margin-top: -5px;
+
+}
+.image-wrapper img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.square-text{
+    display: grid;
+    color: #cea135;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-navbar{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: navy;
+    color: whitesmoke;
+    flex-direction: column;
+
+}
+.footer-link a{
+    width: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+.footer-link a:hover{
+    letter-spacing: 2px;
+    color: gold;
+}
+.copyright{
+    height: 100%;
+    background-color: navy;
+}
+.contact{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+    width: 25px;
+}
+.contact:hover{
+    letter-spacing: 2px;
+    color: gold;
+}
+.hours{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    width: 50px;
+    color: goldenrod;
+    transition: 0.5s;
+}
+.hours:hover{
+    letter-spacing: 2px;
+    color: gold;
+}
+.logo-nav{
+    display: flex;
+
+    align-items: center;
+}
+.logo-nav > .nav-link{
+    justify-content: space-between;
+    align-items: center;
+    padding: 60 100 60 100;
+}
+.social-media a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+    font-size: medium;
+}
+.social-media a:hover{
+    color: blue;
+}
+.top-heading h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: beige;
+}
+.lower-heading h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}
+.footer-logo{
+    filter: brightness(85%);
+}
+.footer-bar{
+    justify-content: space-between;
+    width: 300px;
+    display: flex;
+}
+.social-media a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+    font-size: medium;
+}
+.social-media a:hover{
+    color: blue;
+}
+.contact-grid{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.details{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.left-sidebar{
+    width: 200px;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+}
+.contact-logo{
+    margin-bottom: 20px;
+}
+.forms{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.forms input{
+    display: block;
+    border: none;
+    border-bottom: darkblue solid 3px;
+    border-radius: 2px;
+    color: #cea135;
+    font-family: inherit;
+    width: 100%;
+    transition: all 0.3s;
+}
+.forms textarea{
+    margin-top: 20px;
+    height: 250px;
+    padding: 10px 70px 0 10px;
+    border-radius:3px ;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid darkblue;
+    transition: all 0.3s;
+}
+.send button{
+    color: darkblue;
+    background-color:#cea135;
+    border: 2px solid #cea135;
+    transition: 0.5s;
+    padding:5px 10px ;
+    border-radius: 2px;
+    font-size: medium;
+}
+.forms input:focus{
+    outline: none;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(1rem);
+    border-bottom: 3px solid #cea135;
+    box-shadow:  0 30px 10px whitesmoke;
+}
+.forms label{
+    color: #cea135;
+    visibility: hidden;
+    opacity: 0;
+}
+.forms textarea:focus{
+    outline: none;
+    border: 3px solid #cea135;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(1rem);
+    box-shadow:  0 30px 10px whitesmoke;
+}
+.forms label:focus{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(1rem);
+}
+.send{
+    display: flex;
+    transition: 0.5s;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.send button:active{
+    color: navy;
+box-shadow: 5px 5px 30px;
+}
+.send-button{
+    transition: 0.5s;
+}
+.send button:hover{
+    color: navy;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+@media (max-width: 615px){
+    .forms textarea{
+        width: 100px;
+    }
+    .skewed-header{
+        width: 100%;
+    }
+        body{
+            width: 100%;
+        }
+
+        .skewed-header-content{
+            flex-direction: column;
+        }
+        .skewed-heading{
+            margin-left: 150px;
+        }
+        .navigation{
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        .nav-link{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 30px;
+            letter-spacing: 1.5px;
+        }
+        .page-content {
+            display: grid;
+        grid-template-columns: 1fr;   }
+            .square-text{
+                grid-template-columns: 1fr !important;
+            }
+            .page-content img{
+                width: 100%;
+                margin-top: 0 !important;
+            }
+            .header-background{
+                height: 300px;
+            }
+            .skewed-header{
+                height: 300px;
+            }
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="container">
+            <h1>JOHN GACHARA MWANGI</h1>
+            <h1>BREAKING INTO TECH</h1>
+            <H1>SOFTWARE ENGINEER</H1>
+            <ul>
+                <li><a href="{%url 'home'%}">Home</a></li>
+              <li><a href="{%url 'about'%}">About</a></li>
+              <li><a href="{%url 'projects'%}">Projects</a></li>
+              <li><a href="{%url 'contact'%}">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <div class="content">
+      <section id="about" style="height: 750px;">
+        <div class="container">
+            <div class="form">
+                <div class="form-content">
+                    <div class="forms">
+                        <input type="text" id="fullname" placeholder="Your Name" style="height:30px ;">
+                        <label for="fullname">Your Name</label>
+                    </div>
+                    <div class="forms">
+                        <input type="text" id="email" placeholder="Email" style="height: 30px;">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="forms" style="width: 500px;">
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="send">
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <p style="color: whitesmoke;">&copy; 2023 JOHN GACHARA - Software Engineer Portfolio</p>
+        </div>
+    </div>
+      </footer>
+    </body>
+
+</html>
